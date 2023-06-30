@@ -29,7 +29,7 @@ const Navbar = () => {
                         <ClickLink exact to='/StudentDetails' label='Student Details'/> 
                         <ClickLink exact to='/CoordinatingCourceDetails' label='Coordinating Cource Details'/>
                         <ClickLink exact to='/AdvisorApprovelDetails' label='Advisor Approvel Details'/>
-                        <ClickLink exact to='/StudentDetails' label='Student Details'/>
+                        
                         
                 </div>
                 <div>

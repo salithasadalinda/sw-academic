@@ -1,6 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import NavLogin from '../loginpage/NavLogin'
 import Footer from '../components/Footer'
+import { Form, Button, Container, Row, Col } from 'react-bootstrap'
+
+
+
+
+
+
+
+
 
 //the login components :must set regex and other things
 const LoginForm = () => {
@@ -56,37 +65,45 @@ const LoginForm = () => {
   };
 
   return (
-    <div>
-        <div className='bg-white p-0'>
-        
-        <div className='bg-green m-5 justify-content-center'>
-        <h1>Login</h1>
-                <form onSubmit={handleSubmit}>
-                    <div>
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        value={email}
-                        onChange={handleEmailChange}
-                    />
-                    </div>
-                <div>
-                <label htmlFor="password">Password:</label>
-                <input
-                    type="password"
-                    id="password"
-                    value={password}
-                    onChange={handlePasswordChange}
-                />
-                </div>
-                <button type="submit" className='btn btn-light'>Login</button>
-                {errorMessage && <p>{errorMessage}</p>}
-            </form>
-        </div>
+    <Container className="d-flex align-items-center justify-content-center vh-100" style={{ height: '300px', width: '600px' }}>
+      <div className="bg-green p-5 rounded-3" style={{ height: '600px', width: '800px' }}>
+        <h1 className="text-center">Welcome</h1>
+        <h5 className="text-center">Log into your account</h5>
+        <Form onSubmit={handleSubmit}>
+          <Form.Group>
+            <Form.Label>Email:</Form.Label>
+            <Form.Control
+              type="email"
+              value={email}
+              onChange={handleEmailChange}
+              className="rounded-pill"
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>Password:</Form.Label>
+            <Form.Control
+              type="password"
+              value={password}
+              onChange={handlePasswordChange}
+              className="rounded-pill"
+            />
+          </Form.Group>
+          <br/>
+          <div>
+            Foget password
+          </div>
+          <Button type="submit" variant="light" className="rounded-pill d-block m-auto p-auto">
+            Login
+          </Button>
+            <br />
             
-        </div>
-    </div>
+          <div className='justify-content-center p-0'>
+                {errorMessage && <p style={{ color: 'red' }} className='text-center' >{errorMessage}</p>}
+          </div>
+          
+        </Form>
+      </div>
+    </Container>
   );
 };
 
@@ -96,7 +113,6 @@ const LoginPage = () => {
   return (
     <div>
         <NavLogin/>
-
         <LoginForm/>
         <Footer/>
     </div>
