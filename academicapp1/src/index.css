@@ -57,3 +57,11 @@ button:active {
   
 }
 
+/* in students details horizontal line */
+.vertical-line {
+  border-left: 1px solid black;
+  height: 700px; /* Adjust the height as needed */
+  
+}
+
+
