@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-        <div className='bg-green pt-4 px-4 pb-2 '>
+        <div className='bg-green pt-4 px-4 pb-4 '>
             {/* ps=pl pe<pr   <=old version */}
             <div className='bg-white d-flex nav-inner'>
                 {/* fac picture and name */}

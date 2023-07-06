@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import CardEx from '../components/CardEx'
-import ProfilePage from '../components/ProfilePage'
+
 
 
 //import VerticalDividerExample from '../components/VerticalDividerExample'
@@ -109,7 +109,7 @@ const Home = () => {
         {/* footer */}
         <Footer/>
 
-        <ProfilePage/>
+        
     </div>
   )
 }
