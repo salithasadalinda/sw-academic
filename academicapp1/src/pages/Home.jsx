@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import CardEx from '../components/CardEx'
+import ProfilePage from '../components/ProfilePage'
 
 
 //import VerticalDividerExample from '../components/VerticalDividerExample'
@@ -10,7 +11,7 @@ import CardEx from '../components/CardEx'
 
 const Title = () => {
   return (
-    <h1 className='text-black text-center bg-green'>
+    <h1 className='text-black text-center bg-green nav-inner'>
       Home Page
     </h1>
     
@@ -107,6 +108,8 @@ const Home = () => {
         
         {/* footer */}
         <Footer/>
+
+        <ProfilePage/>
     </div>
   )
 }

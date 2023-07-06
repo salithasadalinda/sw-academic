@@ -7,6 +7,7 @@ import TableEx from '../components/TableEx'
 
 
 
+
 // back end part 
 //link is to go for the particuler place
 const data = [
@@ -128,6 +129,7 @@ const StudentDetails = () => {
         <Navbar/>
         {/* content */}
        <Title/>
+       
        <br/>
 
         <TableEx data={data} />
