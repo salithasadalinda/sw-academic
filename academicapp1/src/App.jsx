@@ -6,6 +6,7 @@ import StudentDetails from './pages/StudentDetails'
 import CoordinatingCourceDetails from './pages/CoordinatingCourceDetails'
 import AdvisorApprovelDetails from './pages/AdvisorApprovelDetails'
 import StudentsProfile from './pages/StudentsProfile'
+import SemesterBasedInfomation from './pages/SemesterBasedInfomation';
 
 
 const App = () => {
@@ -18,7 +19,9 @@ const App = () => {
     <Route path='/coordinatingCourceDetails' element={<CoordinatingCourceDetails/>}/>
     <Route path='/AdvisorApprovelDetails' element={<AdvisorApprovelDetails/>}/>
     <Route path='/StudentsProfile' element={<StudentsProfile/>}/>
+    <Route path='/SemesterBasedInfomation' element={<SemesterBasedInfomation/>}/>
     
+
     </Routes>
     
     </BrowserRouter>
