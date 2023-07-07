@@ -59,9 +59,11 @@ button:active {
 
 /* in students details horizontal line */
 .vertical-line {
-  border-left: 1px solid black;
+  border-left: 1px solid gray;
   height: 700px; /* Adjust the height as needed */
-  
+
 }
+
+
 
 
